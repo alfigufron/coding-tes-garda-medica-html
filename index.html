@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garda Medica</title>
+
+  <link rel="stylesheet" href="./assets/fonts/remixicon.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <div class="wrapper" id="inpatient-page">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="ri-home-2-line"></i>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-user-received-2-line"></i>
+            Antrian
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-file-list-2-line"></i>
+            Regis
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-stethoscope-fill"></i>
+            Rajal
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="active">
+            <i class="ri-rest-time-line"></i>
+            Ranap
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-pulse-fill"></i>
+            Rekmed
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-medicine-bottle-line"></i>
+            Farmasi
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-lungs-line"></i>
+            Radiologi
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-microscope-line"></i>
+            Lab
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-computer-line"></i>
+            Kasir
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="ri-health-book-line"></i>
+            Sekre
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="body-wrapper">
+      <div class="header">
+        <div class="back">
+          <a href="#" id="btn-back">
+            <i class="ri-arrow-left-line"></i>
+          </a>
+        </div>
+
+        <div class="title">
+          <h2>
+            <i class="ri-rest-time-line"></i>
+            Rawat Inap
+          </h2>
+
+          <a href="#" id="btn-refresh">
+            <i class="ri-refresh-line"></i>
+          </a>
+        </div>
+
+        <div class="search">
+          <input type="text" id="test">
+          <label><i class="ri-search-line"></i></label>
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="profile">
+          <div class="profile-detail name">
+            <label>Nama (Usia)</label>
+            <h2>NY. Mariana (23)</h2>
+          </div>
+          <div class="profile-detail birth">
+            <label>Tanggal Lahir</label>
+            <h2>13 Jan 1997</h2>
+          </div>
+          <div class="profile-detail numreg">
+            <label>Nomor Rekam Medis</label>
+            <h2>01234567</h2>
+          </div>
+          <div class="profile-detail dpjp">
+            <label>DPJP</label>
+            <h2>dr. Febri Bahari, SpPD, KGEH</h2>
+          </div>
+          <div class="profile-detail username">
+            <label>Anda masuk sebagai</label>
+            <h2>dr. Dany Petra, SpPD</h2>
+          </div>
+        </div>
+
+        <div class="medical">
+          <div class="complaint">
+            <div class="medical-data main">
+              <label>Keluhan Utama</label>
+              <h2><b>KU :</b> Muntah berdarah sejak 1 hari yang lalu</h2>
+            </div>
+
+            <div class="medical-data diagnosis">
+              <label>Diagnosis Primer dan sekunder</label>
+              <h2><b>DP :</b> Esophageal varices with bleeding (I85.01)...</h2>
+            </div>
+          </div>
+
+          <div class="medical-data vital-signs">
+            <div class="header">
+              <div>
+                <label>Tanda-tanda vital</label>
+                <span class="day">H+3</span>
+              </div>
+              
+              <div>
+                <span class="updated-at">Last Update: 
+                  <span class="datetime">Selasa, 27 Okt 2020, 06.30 WIB</span>
+                </span>
+                <button id="btn-vital-data">
+                  <i class="ri-menu-line"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="body">
+              <div class="menu bg-success">
+                <h5>Kesadaran</h5>
+                <h3>Compos Mentis</h3>
+              </div>
+
+              <div class="menu bg-success">
+                <h5>Tekanan Darah</h5>
+                <h3>110/70</h3>
+                <h5>mmHg</h5>
+              </div>
+
+              <div class="menu bg-danger">
+                <h5>Laju Nadi</h5>
+                <h3>120</h3>
+                <h5>Kali/menit</h5>
+              </div>
+
+              <div class="menu bg-warning">
+                <h5>Laju Nafas</h5>
+                <h3>20</h3>
+                <h5>Kali/menit</h5>
+              </div>
+
+              <div class="menu bg-success">
+                <h5>Suhu Tubuh</h5>
+                <h3>37,3</h3>
+                <h5>&#8451</h5>
+              </div>
+
+              <div class="menu bg-warning">
+                <h5>EWS</h5>
+                <h3>3</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="#" class="active">Pengkajian Awal</a>
+          </li>
+          <li>
+            <a href="#">
+              Lab/Radiologi
+              <span class="badge-notification bg-danger">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">CPPT Ranap</a>
+          </li>
+          <li>
+            <a href="#">
+              Informed Concent
+              <span class="badge-notification bg-warning">!</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Skrining
+              <span class="badge-notification bg-danger">1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">Rekonsiliasi Obat</a>
+          </li>
+          <li>
+            <a href="#">Resume Medis</a>
+          </li>
+          <li>
+            <a href="#" class="nav-detail-menu">
+              <i class="ri-menu-line"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-navbar">
+        <div class="medical-history">
+          <h3 class="title">Riwayat Berobat</h3>
+
+          <ul>
+            <li>
+              <h4>25 Okt 2020</h4>
+              <h4 class="desc">IGD-Ranap</h4>
+            </li>
+
+            <li>
+              <h4>3 Okt 2020</h4>
+              <h4 class="desc">Rajal</h4>
+            </li>
+
+            <li>
+              <h4>3 Sep 2020</h4>
+              <h4 class="desc">Rajal</h4>
+            </li>
+
+            <li>
+              <h4>20 Jun 2020</h4>
+              <h4 class="desc">IGD</h4>
+            </li>
+
+            <li>
+              <h4>1 Feb 2020</h4>
+              <h4 class="desc">IGD-Ranap</h4>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="medical-detail">
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#" class="active">Anamnesis</a>
+              </li>
+              <li>
+                <a href="#">Riw. Alergi</a>
+              </li>
+              <li>
+                <a href="#">Status Nyeri</a>
+              </li>
+              <li>
+                <a href="#">Fungsional</a>
+              </li>
+              <li>
+                <a href="#">Resiko Jatuh</a>
+              </li>
+              <li>
+                <a href="#">Skrining Gizi</a>
+              </li>
+              <li>
+                <a href="#">Edukasi</a>
+              </li>
+              <li>
+                <a href="#">Pem. Fisik</a>
+              </li>
+              <li>
+                <a href="#">Lab</a>
+              </li>
+              <li>
+                <a href="#">Radiologi</a>
+              </li>
+              <li>
+                <a href="#">Daf. Masalah</a>
+              </li>
+              <li>
+                <a href="#">Tata Laksana</a>
+              </li>
+              <li>
+                <a href="#">Riw. Obat</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="body">
+            <h4 class="title">Pengkajian Awal Pasien Rawat Inap</h4>
+
+            <div class="description">
+              <div class="anamnesis">
+                <label>
+                  <input type="radio" name="anamnesis"> Autoanamnesis
+                </label>
+  
+                <label>
+                  <input type="radio" name="anamnesis" checked> Alloanamnesis : Tn. Rizal (Suami)
+                </label>
+              </div>
+
+              <div class="anamnesis">
+                <label>Tanggal Masuk Bangsal : Senin, 26 Okt 2020, 12.00 WIB</label>
+                <label>Anamnesis oleh : dr. Sukma Ayu</label>
+              </div>
+            </div>
+
+            <div class="detail">
+              <h3>Keluhan Utama :</h3>
+              <textarea rows="3">Muntah darah sejak 1 hari yang lalu</textarea>
+
+              <h3>Riwayat Penyakit Sekarang :</h3>
+              <textarea rows="3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, eum in similique, dolor, magnam cum vitae est iste reprehenderit ipsum eveniet placeat! Adipisci saepe impedit doloremque dicta quos quia et.</textarea>
+
+              <h3>Riwayat Penyakit Dahulu :</h3>
+              <textarea rows="3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, eum in similique, dolor, magnam cum vitae est iste reprehenderit ipsum eveniet placeat! Adipisci saepe impedit doloremque dicta quos quia et.</textarea>
+
+              <h3>Riwayat Penyakit Keluarga :</h3>
+              <textarea rows="3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, eum in similique, dolor, magnam cum vitae est iste reprehenderit ipsum eveniet placeat! Adipisci saepe impedit doloremque dicta quos quia et.</textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

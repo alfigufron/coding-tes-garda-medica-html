@@ -1,0 +1,35 @@
+@import "./utilities/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: #{$primary-font}, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $light;
+  display: flex;
+
+  .body-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@import "./components/main";
+
+@import "./pages/main";
